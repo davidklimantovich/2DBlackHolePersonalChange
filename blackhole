@@ -32,19 +32,22 @@ class Blackhole {
   }
 
   show() {
+  
+    //center of blackhole
     ellipseMode(RADIUS);
     fill(0);
     noStroke();
     ellipse(this.pos.x, this.pos.y, this.rs);
-
+    
+    //accretion disk
     noFill();
     stroke(100, 100);
     strokeWeight(64);
     ellipse(this.pos.x, this.pos.y, this.rs * 3 + 32);
-
+    
+    //photon orbit
     stroke(255, 150, 0, 100);
     strokeWeight(32);
-
     ellipse(this.pos.x, this.pos.y, this.rs * 1.5 + 16);
   }
 }
