@@ -1,4 +1,4 @@
-// refactoring aspect
+// REFACTORING ASPECT, created image variable
 let img; 
 class Photon {
 
@@ -35,9 +35,9 @@ class Photon {
 
   
     strokeWeight(4);
-    // changed trail colour 
+    // REFACTORING ASPECT, changed trail colour 
     stroke(112,128,144);
-    // refactoring aspect
+    //  REFACTORING ASPECT,refactoring aspect
     image(img,this.pos.x -20  ,this.pos.y - 15 , 50,50);
 
 
