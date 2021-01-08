@@ -10,7 +10,7 @@ let start, end;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // implemented image
+  // REFACTORING ASPECT, implemented image
   img = loadImage('ufo.png'); 
   m87 = new Blackhole(width / 2, height / 2, 10000);
 
