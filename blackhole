@@ -1,15 +1,3 @@
-// Daniel Shiffman
-// https://thecodingtrain.com/
-// https://youtu.be/Iaz9TqYWUmA
-// https://editor.p5js.org/codingtrain/sketches/2zZqSkxtj
-
-// Thanks to Veritasium
-// https://youtu.be/zUyH3XhpLTo
-// and Chris Orban / STEM Coding
-// https://www.asc.ohio-state.edu/orban.14/stemcoding/blackhole.html
-
-// Accounting for relativity:
-// https://editor.p5js.org/codingtrain/sketches/4DvaeH0Ur
 
 class Blackhole {
   constructor(x, y, m) {
@@ -33,19 +21,16 @@ class Blackhole {
 
   show() {
   
-    //center of blackhole
     ellipseMode(RADIUS);
     fill(0);
     noStroke();
     ellipse(this.pos.x, this.pos.y, this.rs);
     
-    //accretion disk
     noFill();
     stroke(100, 100);
     strokeWeight(64);
     ellipse(this.pos.x, this.pos.y, this.rs * 3 + 32);
     
-    //photon orbit
     stroke(255, 150, 0, 100);
     strokeWeight(32);
     ellipse(this.pos.x, this.pos.y, this.rs * 1.5 + 16);
