@@ -16,9 +16,7 @@ class Photon {
 
   update() {
     if (!this.stopped) {
-      //if (frameCount % 5 == 0) {
       this.history.push(this.pos.copy());
-      //}
       const deltaV = this.vel.copy();
       deltaV.mult(dt);
       this.pos.add(deltaV);
